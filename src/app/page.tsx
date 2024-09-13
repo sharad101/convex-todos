@@ -2,7 +2,7 @@
 
 import {useState} from 'react';
 import { NewToDoForm } from './components/new-todo-form';
-import { title } from 'process';
+
 
 type ToDoItem = {
   title: string;
@@ -51,10 +51,10 @@ export default function Home() {
       }} />
     </div>
   );
-}
+};
 
 function ToDoItem({title, description, completed, onCompleteChanged, onRemove}:{
-  title: String;
+  title: string;
   description: string;
   completed: boolean;
   onCompleteChanged: (newValue: boolean) => void;
